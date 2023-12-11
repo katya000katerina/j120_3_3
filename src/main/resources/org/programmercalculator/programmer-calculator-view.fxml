@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.programmercalculator.Controller">
+   <children>
+      <StackPane prefHeight="115.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="screen" prefHeight="95.0" prefWidth="687.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children></StackPane>
+      <HBox alignment="CENTER" prefHeight="84.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="C" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="C">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="D" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="D">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="E" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="E">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="F" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="F">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefHeight="84.0" prefWidth="87.5" text="shr">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefHeight="84.0" prefWidth="87.5" text="xor">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefHeight="84.0" prefWidth="87.5" text="/">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumeralSystems" prefHeight="84.0" prefWidth="87.5" text="hex">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="84.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="num8" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="8">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="num9" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="9">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="A" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="A">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="B" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="B">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefHeight="84.0" prefWidth="87.5" text="shl">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefHeight="84.0" prefWidth="87.5" text="and">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefHeight="84.0" prefWidth="87.5" text="*">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumeralSystems" prefHeight="84.0" prefWidth="87.5" text="dec">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="84.0" prefWidth="700.0">
+         <children>
+            <Button fx:id="num4" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="4">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="num5" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="5">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="num6" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="6">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="num7" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="7">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processEqualsAndClear" prefHeight="84.0" prefWidth="87.5" text="Clear">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefHeight="84.0" prefWidth="87.5" text="or">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefHeight="84.0" prefWidth="87.5" text="-">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumeralSystems" prefHeight="84.0" prefWidth="87.5" text="oct">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="84.0" prefWidth="700.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="0">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="1">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="num2" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="2">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button fx:id="num3" mnemonicParsing="false" onAction="#processNumbers" prefHeight="84.0" prefWidth="87.5" text="3">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefHeight="84.0" prefWidth="87.5" text="+/-">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processUnaryOperators" prefHeight="84.0" prefWidth="87.5" text="not">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processBinaryOperators" prefHeight="84.0" prefWidth="87.5" text="+">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processNumeralSystems" prefHeight="84.0" prefWidth="87.5" text="bin">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="69.0" prefWidth="700.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#processEqualsAndClear" prefHeight="57.0" prefWidth="700.0" text="=">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
