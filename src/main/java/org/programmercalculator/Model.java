@@ -120,8 +120,7 @@ public class Model {
                 break;
         }
         numbers.remove(index);
-        numbers.remove(index);
-        numbers.add(index, temp);
+        numbers.set(index, temp);
         operators.remove(index);
     }
 }
