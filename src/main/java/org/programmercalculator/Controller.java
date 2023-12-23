@@ -72,7 +72,7 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    public void processNumbers(ActionEvent event) {
+    private void processNumbers(ActionEvent event) {
         if (start) {
             screen.setText("");
             start = false;
@@ -92,7 +92,7 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    public void processBinaryOperators(ActionEvent event) {
+    private void processBinaryOperators(ActionEvent event) {
         if (currentNumber.isBlank() && !isBinaryOperatorChosen) {
             return;
         }
@@ -113,7 +113,7 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    public void processUnaryOperators(ActionEvent event) {
+    private void processUnaryOperators(ActionEvent event) {
         String value = ((Button) event.getSource()).getText();
         if (currentNumber.isBlank()) {
             return;
@@ -145,7 +145,7 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    public void processEqualsAndClear(ActionEvent event) {
+    private void processEqualsAndClear(ActionEvent event) {
         String value = ((Button) event.getSource()).getText();
         if (currentNumber.isBlank() && value.equals("=")) {
             return;
@@ -166,7 +166,7 @@ public class Controller implements Initializable {
     }
 
     @FXML
-    public void processNumeralSystems(ActionEvent event) {
+    private void processNumeralSystems(ActionEvent event) {
         previousNumeralSystem = currentNumeralSystem;
         currentNumeralSystem = ((Button) event.getSource()).getText();
         setCurrentNumeralSystemButtons();
