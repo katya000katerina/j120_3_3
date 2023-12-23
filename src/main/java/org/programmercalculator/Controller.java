@@ -129,8 +129,10 @@ public class Controller implements Initializable {
                 model.removeLastOperatorFromList();
                 textWithoutCurrentNumber = textWithoutCurrentNumber.substring(0, textWithoutCurrentNumber.length() - 1);
             }
-        }
-        if (value.equals("+/-")) {
+        } else { //when "+/-" button is pressed
+            if (currentNumber.equals("0")) {
+                return;
+            }
             if (!isCurrentNumberNegative) {
                 isCurrentNumberNegative = true;
                 currentNumber = "-" + currentNumber;
