@@ -78,8 +78,16 @@ public class Controller implements Initializable {
             start = false;
         }
         String value = ((Button) event.getSource()).getText();
-        currentNumber += value;
-        screen.setText(screen.getText() + value);
+        if (currentNumber.equals("0")) {
+            if (value.equals("0")) {
+                return;
+            }
+            currentNumber = value;
+            screen.setText(getCurrentTextWithoutLastValue("0") + value);
+        } else {
+            currentNumber += value;
+            screen.setText(screen.getText() + value);
+        }
         isBinaryOperatorChosen = false;
     }
 
@@ -137,7 +145,7 @@ public class Controller implements Initializable {
     @FXML
     public void processEqualsAndClear(ActionEvent event) {
         String value = ((Button) event.getSource()).getText();
-        if (currentNumber.isBlank() && value.equals("=")){
+        if (currentNumber.isBlank() && value.equals("=")) {
             return;
         }
         if (value.equals("=")) {
